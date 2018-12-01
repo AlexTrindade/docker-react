@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -f Dockerfile.dev -t docker-react .
+
+script:
+  # -- --coverage is used to terminate the test
+  - docker run docker-react npm run test -- --coverage

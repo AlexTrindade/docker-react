@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>Changed via Dockerfile in production!!!</p>
+          <p>Changed via Dockerfile in production!</p>
         </header>
       </div>
     );
